@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.m-t-1 {
+  margin-top: 1rem;
+}
+
+.grid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "card-design card-craft card-customize";
+  gap: 3rem 4rem;
+  padding: 0 3rem;
+}
+
+#header-area {
+  grid-area: header;
+}
+
+#card-design-area {
+  grid-area: card-design;
+}
+
+#card-craft-area {
+  grid-area: card-craft;
+}
+
+#card-customize-area {
+  grid-area: card-customize;
+}
+
+.header {
+  text-align: center;
+}
+
+.line_orange {
+  background-color: rgba(255, 139, 56, 1);
+  width: 64px;
+  height: 2px;
+  margin: 1.5rem auto;
+}
+
+.card {
+  text-align: center;
+}
+
+.img_lamp {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 2px solid #ff8b38;
+  background-image: url(./images/lamp.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img_keyboard {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 2px solid #ff8b38;
+  background-image: url(./images/keyboard.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img_lightning {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 2px solid #ff8b38;
+  background-image: url(./images/lightning.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header"
+      "card-design"
+      "card-craft"
+      "card-customize";
+    gap: 2rem;
+    padding: 0 3rem;
+  }
+}
